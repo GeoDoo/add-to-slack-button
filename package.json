@@ -10,8 +10,9 @@
     "start": "es-dev-server --app-index demo/index.html --node-resolve --open --watch"
   },
   "dependencies": {
+    "lit-element": "^2.2.1",
     "lit-html": "^1.1.2",
-    "lit-element": "^2.2.1"
+    "semantic-release": "^17.1.2"
   },
   "devDependencies": {
     "es-dev-server": "^1.23.0"
