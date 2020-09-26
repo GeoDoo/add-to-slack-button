@@ -7,7 +7,8 @@
   "main": "index.js",
   "module": "index.js",
   "scripts": {
-    "start": "es-dev-server --app-index demo/index.html --node-resolve --open --watch"
+    "start": "es-dev-server --app-index demo/index.html --node-resolve --open --watch",
+    "release": "semantic-release"
   },
   "dependencies": {
     "lit-element": "^2.2.1",
