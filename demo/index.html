@@ -10,19 +10,23 @@
   </head>
   <body>
     <div id="demo"></div>
+    <add-to-slack-button
+      endpoint="https://post-your-standup-api.codinginsights.blog/install-url"
+      height="30"
+    ></add-to-slack-button>
 
     <script type="module">
       import { html, render } from "lit-html";
       import "../add-to-slack-button.js";
 
-      const title =
+      const endpoint =
         "https://post-your-standup-api.codinginsights.blog/install-url";
       const height = 60;
 
       render(
         html`
           <add-to-slack-button
-            .href=${title}
+            .endpoint=${endpoint}
             .height=${height}
           ></add-to-slack-button>
         `,

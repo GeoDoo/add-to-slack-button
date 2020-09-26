@@ -4,15 +4,15 @@ export class AddToSlackButton extends LitElement {
   static get styles() {
     return css`
       :host {
-        display: block;
-        padding: 25px;
-        color: var(--add-to-slack-button-text-color, #000);
+        display: inline-block;
+        padding: 24px;
       }
     `;
   }
 
   static get properties() {
     return {
+      endpoint: { type: String },
       href: { type: String },
       height: { type: Number },
     };
@@ -20,16 +20,17 @@ export class AddToSlackButton extends LitElement {
 
   constructor() {
     super();
+    this.endpoint = "";
     this.href = "";
     this.height = 40;
   }
 
-  firstUpdated() {
-    fetch("https://post-your-standup-api.codinginsights.blog/install-url")
-      .then((r) => r.json())
-      .then((r) => {
-        this.href = r.installUrl;
-      });
+  async firstUpdated() {
+    const { endpoint } = this;
+
+    const response = await fetch(endpoint);
+    const data = await response.json();
+    this.href = data.installUrl;
   }
 
   render() {

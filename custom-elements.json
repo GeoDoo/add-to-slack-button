@@ -6,27 +6,21 @@
       "description": "A component that renders the Add to Slack button",
       "properties": [
         {
-          "name": "title",
+          "name": "endpoint",
           "type": "String",
-          "description": "The title of your component",
-          "default": "Hey there"
+          "description": "The endpoint to get your install url",
+          "default": ""
         },
         {
           "name": "counter",
           "type": "Number",
-          "description": "An action counter",
-          "default": 0
+          "description": "The height of the button",
+          "default": 40
         }
       ],
       "events": [],
       "slots": [],
-      "cssProperties": [
-        {
-          "name": "--add-to-slack-button-text-color",
-          "description": "Main Text Color",
-          "type": "Color"
-        }
-      ]
+      "cssProperties": []
     }
   ]
 }
