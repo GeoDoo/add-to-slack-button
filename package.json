@@ -2,7 +2,7 @@
   "name": "add-to-slack-button",
   "version": "0.0.0",
   "description": "Webcomponent add-to-slack-button following open-wc recommendations",
-  "author": "add-to-slack-button",
+  "author": "Georgios Karametas",
   "license": "MIT",
   "main": "index.js",
   "module": "index.js",
@@ -10,6 +10,20 @@
     "start": "es-dev-server --app-index demo/index.html --node-resolve --open --watch",
     "release": "semantic-release"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GeoDoo/add-to-slack-button.git"
+  },
+  "keywords": [
+    "webcomponent",
+    "web-component",
+    "web component",
+    "Web Component",
+  ],
+  "bugs": {
+    "url": "https://github.com/GeoDoo/add-to-slack-button/issues"
+  },
+  "homepage": "https://github.com/GeoDoo/add-to-slack-button#readme",
   "dependencies": {
     "lit-element": "^2.2.1",
     "lit-html": "^1.1.2",
