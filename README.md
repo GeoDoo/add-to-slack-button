@@ -49,7 +49,7 @@ If you want to use it for your website, you can also do the following:
 
 ## Live demo
 
-You can check the widget on the sidebar of my blog: https://geodoo.work
+You can check the Add to Slack button on the sidebar of my blog: https://geodoo.work
 
 ## Tooling configs
 
