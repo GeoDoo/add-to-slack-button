@@ -33,6 +33,24 @@ More info about OAuth in [The OAuth Flow](https://api.slack.com/legacy/oauth#aut
 ></add-to-slack-button>
 ```
 
+If you want to use it for your website, you can also do the following:
+
+```html
+<!-- Polyfills if needed -->
+<script src="https://unpkg.com/@webcomponents/webcomponentsjs@latest/webcomponents-loader.js"></script>
+<script
+  type="module"
+  src="https://unpkg.com/add-to-slack-button@latest/add-to-slack-button.js?module"
+></script>
+<add-to-slack-button
+  endpoint="<your endpoint that exposes the OAuth 2.0 install URL>"
+></add-to-slack-button>
+```
+
+## Live demo
+
+You can check the widget on the sidebar of my blog: https://geodoo.work
+
 ## Tooling configs
 
 For most of the tools, the configuration is in the `package.json` to reduce the amount of files in your project.
