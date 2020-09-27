@@ -13,13 +13,21 @@ npm i add-to-slack-button
 
 ## Usage
 
+This component is supposed to be used when you have an app that needs to generate an OAuth 2.0 dynamic install URL. The limitation of this package is that you will need to expose this URL to an endpoint (within your app or separate API?) in this form:
+
+```json
+{
+  "installUrl": "<the dynamic URL here>"
+}
+```
+
 ```html
 <script type="module">
   import "add-to-slack-button/add-to-slack-button.js";
 </script>
 
 <add-to-slack-button
-  endpoint="https://post-your-standup-api.codinginsights.blog/install-url"
+  endpoint="<your endpoint that exposes the OAuth 2.0 install URL>"
   height="60"
 ></add-to-slack-button>
 ```
