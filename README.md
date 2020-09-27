@@ -1,6 +1,5 @@
 [![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/owner/my-element)
 
-
 # \<add-to-slack-button>
 
 This webcomponent follows the [open-wc](https://github.com/open-wc/open-wc) recommendation.
@@ -20,6 +19,8 @@ This component is supposed to be used when you have an app that needs to generat
   "installUrl": "<the dynamic URL here>"
 }
 ```
+
+More info about OAuth in [The OAuth Flow](https://api.slack.com/legacy/oauth#authenticating-users-with-oauth__the-oauth-flow)
 
 ```html
 <script type="module">
